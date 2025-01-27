@@ -11,6 +11,7 @@
     <button onclick="calculaMedia()">Media</button>
     <button onclick="tablaMultiplicar()">Tabla multiplicar</button>
     <button onclick="posicion()">Alineación</button>
+    <button onclick="imprimeAlineacion()">Imprime Alineación</button>
     <script >
 
         
@@ -50,7 +51,22 @@
 
     function posicion(){
         let numero = prompt("Dime el  número")
+        if(numero>alineación.length || numero<1){
+            alert('Posición no ocupada')
+           
+        }else {
         alert('En la posición '+numero+"juega "+alineación[numero-1]);
+        }
+    }
+    function imprimeAlineacion(){
+        let cadena='';
+        for(let i=0;i<alineación.length;i++){
+            cadena += i+" "+alineación[i]+"<br>";
+           
+
+
+        }
+        document.write(cadena);
     }
     </script>
    
