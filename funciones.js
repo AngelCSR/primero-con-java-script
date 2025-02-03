@@ -64,10 +64,13 @@
             let media =claculaAreaTriangulo(base,altura)
             alert('El area es'+claculaAreaTriangulo(base,altura))
         }
-        function areaTrianguloInmput(){
+        function areaTrianguloInputs(){
             let base=document.getElementById("base");
             let altura= document.getElementById("altura");
             baseNumero=base.value;
             alturaNumero= altura.value;
+            let area= claculaAreaTriangulo(baseNumero,alturaNumero)
+            let resultado=document.getElementById("resultado");
+            resultado.innerHTML="El area es "+area;
         }
        
