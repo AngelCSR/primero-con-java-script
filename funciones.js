@@ -81,4 +81,5 @@
             let miTitulo=document.getElementById("titulo");
             miTitulo.style.fontSize="4em";
             miTitulo.style.color="red";
+            miTitulo.style.fontFamily="Arial";
         } 
