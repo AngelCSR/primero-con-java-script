@@ -62,6 +62,10 @@
             let base =prompt("Dime el lado del triangulo")
             let altura =prompt("Dime la altura del triangulo")
             let media =claculaAreaTriangulo(base,altura)
-            alert(" El area del triangulo es: "+area)
+            alert(claculaAreaTriangulo(base,altura))
+        }
+        function areaTrianguloInmput(){
+            let base=document.getElementById("base");
+            let altura= document.getElementById("altura");
         }
        
