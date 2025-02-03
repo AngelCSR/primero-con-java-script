@@ -73,4 +73,12 @@
             let resultado=document.getElementById("resultado");
             resultado.innerHTML="El area es "+area;
         }
-       
+       function cambiarImagen(){
+        let miImagen=document.getElementById("foto")
+        miImagen.src= "imagenes/descarga (2).jpeg"
+        }
+        function cambiaTitulo(){
+            let miTitulo=document.getElementById("titulo");
+            miTitulo.style.fontSize="4em";
+            miTitulo.style.color="red";
+        } 
