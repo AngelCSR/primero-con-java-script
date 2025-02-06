@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pueblosCR{
+            display: none;
+        }
+        img{height: 100px;}
+
+    </style>
+</head>
+<body>
+    <p>
+    <select onchange="muestrafoto()" name="" id="listaProvincias">
+        <option value="cr">Ciudad real</option>
+        <option value="to">Toledo</option>
+        <option value="al">Albacete</option>
+        <option value="cu">Cuenca</option> 
+        <option value="gu">Guadalajara</option>
+    </select>
+    <img src="" id="foto">
+    <select name="" id="pueblosCR">
+        <option value="al">Alcazar de San Juan</option>
+        <option value="to">Tomelloso</option>
+        <option value="ar">Argamasilla</option>
+    </select>
+</p>
+    <script>
+        muestrafoto();
+        function muestrafoto(){
+            let Foto=document.getElementById("foto");
+            let ListaProvincias=document.getElementById("listaProvincias");
+            let provSeleccionada=ListaProvincias.value;
+            let listaPueblos= document.getElementById("pueblosCR");
+          if(provSeleccionada=="cr") {
+            Foto.src="imagenes/ciu.jpeg";
+            
+            listaPueblos.style.display="inline"
+          } else{
+            listaPueblos.style.display="none"
+          }
+          if(provSeleccionada=="to") {
+            Foto.src="imagenes/to.jpeg";
+          }
+          if(provSeleccionada=="al") {
+            Foto.src="imagenes/al.jpeg";
+          }
+          if(provSeleccionada=="cu") {
+            Foto.src="imagenes/cu.jpeg";
+          }
+          if(provSeleccionada=="gu") {
+            Foto.src="imagenes/descarga (3).jpeg";
+          }
+        }
+    </script>
+    
+</body>
+</html>
